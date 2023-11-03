@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DormTransferFile_OnAndroid</string>
+    <string name="confirm">OK</string>
+    <string name="sender_list_title">Available senders</string>
+    <string name="sender_list_refresh_button_text">Refresh</string>
+    <string name="connection_code_input_hint">Or type connection code to connect</string>
+    <string name="connection_code_confirm_button_text">Connect</string>
+    <string name="downloading_list_title">Downloading</string>
+</resources>
