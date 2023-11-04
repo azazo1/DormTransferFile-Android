@@ -44,6 +44,7 @@ public class SenderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sender);
+        setTitle(R.string.send_activity_title);
         handler = new Handler();
         titleText = findViewById(R.id.send_title_text);
         stateText = findViewById(R.id.send_state_text);
@@ -62,7 +63,7 @@ public class SenderActivity extends AppCompatActivity {
                 handler.post(() -> {
                     Toast.makeText(this, R.string.connected_to_scm, Toast.LENGTH_SHORT).show();
 
-                    if (action.equals(Intent.ACTION_SEND) && type != null) { // 通过分享打开的此活动
+                    if (Intent.ACTION_SEND.equals(action) && type != null) { // 通过分享打开的此活动
                         try {
                             Uri uri = intent.getParcelableExtra(Intent.EXTRA_STREAM);
                             DocumentFile file = DocumentFile.fromSingleUri(this, uri);

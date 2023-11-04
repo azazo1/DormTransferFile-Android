@@ -26,4 +26,5 @@
     <string name="state_sending_format">Remains: %s, Speed: %s</string>
     <string name="send_over">Send Over</string>
     <string name="send_title_with_size_format">Send File: %s\nSize: %s</string>
+    <string name="send_activity_title">Send</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">宿舍文件传输助手</string>
+    <string name="confirm">OK</string>
+    <string name="sender_list_title">可用的文件发送者</string>
+    <string name="sender_list_refresh_button_text">刷新列表</string>
+    <string name="connection_code_input_hint">或者输入连接码来进行连接，从而开始下载</string>
+    <string name="connection_code_confirm_button_text">连接</string>
+    <string name="downloading_list_title">下载中的项目</string>
+    <string name="connection_code_format">连接码: %d</string>
+    <string name="filename_format">文件名: %s</string>
+    <string name="click_to_download_text">[下载]</string>
+    <string name="no_available_senders">没有可用的文件发送者</string>
+    <string name="share">[分享]</string>
+    <string name="error_clickable_text">[异常]</string>
+    <string name="connecting_text">[连接中]</string>
+    <string name="connected_to_scm">连接到单片机服务器</string>
+    <string name="receiver_activity_title">接收</string>
+    <string name="receive">接收</string>
+    <string name="send">发送</string>
+    <string name="please_choose_a_file">请选择一个文件</string>
+    <string name="send_title_format">发送文件: %s</string>
+    <string name="waiting_for_connection_format">连接码: %d, 等待客户端连接中</string>
+    <string name="waiting_for_registration_result">等待注册结果</string>
+    <string name="copying_file">复制选中文件中</string>
+    <string name="select_a_file">选择一个文件</string>
+    <string name="state_sending_format">剩余: %s, 速度: %s</string>
+    <string name="send_over">发送完毕</string>
+    <string name="send_title_with_size_format">发送文件:%s,\n大小: %s</string>
+    <string name="send_activity_title">发送</string>
+</resources>
