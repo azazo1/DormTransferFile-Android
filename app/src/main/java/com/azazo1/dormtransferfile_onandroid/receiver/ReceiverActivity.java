@@ -54,6 +54,7 @@ public class ReceiverActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receiver);
+        setTitle(R.string.receiver_activity_title);
         handler = new Handler();
         Button refreshButton = findViewById(R.id.sender_list_refresh_button);
         refreshButton.setClickable(false);
@@ -184,7 +185,9 @@ public class ReceiverActivity extends AppCompatActivity {
                 }
             }
         } catch (IOException e) {
-            Tools.showErrorDialogInHandler(e, this, this::reconnectToSCMServer, handler);
+            if (!isDestroyed()) { // 若是 activity 结束了之后导致的报错则忽略
+                Tools.showErrorDialogInHandler(e, this, this::reconnectToSCMServer, handler);
+            }
         }
     }
 
@@ -207,6 +210,11 @@ public class ReceiverActivity extends AppCompatActivity {
         if (connector != null) {
             connector.close();
         }
+        var ignore = getCacheDir().listFiles(pathname -> { // 清除缓存
+            System.out.println(pathname.toString());
+            boolean delete = pathname.delete();
+            return false;
+        });
     }
 
     private class SendersListAdapter extends ArrayAdapter<MsgType.Pair<Integer, String>> {

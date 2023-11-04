@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DormTransferFile_OnAndroid</string>
+    <string name="app_name">DormTransferFile</string>
     <string name="confirm">OK</string>
     <string name="sender_list_title">Available senders</string>
     <string name="sender_list_refresh_button_text">Refresh</string>
@@ -14,5 +14,16 @@
     <string name="error_clickable_text">[Error]</string>
     <string name="connecting_text">[Connecting]</string>
     <string name="connected_to_scm">Connected to SCM</string>
-    <string name="connecting_to_scm">Connecting to SCM, don\'t do anything...</string>
+    <string name="receiver_activity_title">Receive</string>
+    <string name="receive">Receive</string>
+    <string name="send">Send</string>
+    <string name="please_choose_a_file">Please choose a file</string>
+    <string name="send_title_format">Send File: %s</string>
+    <string name="waiting_for_connection_format">Connection code: %d, waiting for connection</string>
+    <string name="waiting_for_registration_result">Waiting for registration result</string>
+    <string name="copying_file">Copying selected file</string>
+    <string name="select_a_file">Select a file</string>
+    <string name="state_sending_format">Remains: %s, Speed: %s</string>
+    <string name="send_over">Send Over</string>
+    <string name="send_title_with_size_format">Send File: %s\nSize: %s</string>
 </resources>

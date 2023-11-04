@@ -3,27 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SenderActivity">
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/sender_intent_button"
+    <TextView
+        android:id="@+id/send_title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/send" />
+        android:layout_gravity="start" />
 
-    <Button
-        android:id="@+id/receiver_intent_button"
+    <TextView
+        android:id="@+id/send_state_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/receive" />
+        android:layout_gravity="start" />
+
+    <ProgressBar
+        android:id="@+id/send_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Space
         android:layout_width="match_parent"
