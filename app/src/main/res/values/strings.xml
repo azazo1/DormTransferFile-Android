@@ -6,4 +6,13 @@
     <string name="connection_code_input_hint">Or type connection code to connect</string>
     <string name="connection_code_confirm_button_text">Connect</string>
     <string name="downloading_list_title">Downloading</string>
+    <string name="connection_code_format">Code: %d</string>
+    <string name="filename_format">Filename: %s</string>
+    <string name="click_to_download_text">[Download]</string>
+    <string name="no_available_senders">No available senders</string>
+    <string name="share">[Share]</string>
+    <string name="error_clickable_text">[Error]</string>
+    <string name="connecting_text">[Connecting]</string>
+    <string name="connected_to_scm">Connected to SCM</string>
+    <string name="connecting_to_scm">Connecting to SCM, don\'t do anything...</string>
 </resources>
